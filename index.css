@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(253, 253, 253);
+    height: 110vh;
+}
+
+.first-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: blue;
+    color: white;
+}
+.name{
+    font-size: 35px;
+}
+.year{
+    font-size: 25px;
+}
+.second-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.second-container p{
+    width: 40%;
+    text-align: center;
+    margin-left: 100px;
+    line-height: 1.8;
+    font-size: 25px;
+}
+.biography{
+    background-color: blue;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    color: white;
+}
+.bio{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    line-height: 1.5;
+    padding: 30px;
+    border-bottom: 2px solid white;
+    margin-bottom: 25px;
+}
+.bio h1{
+    padding-bottom: 25px;
+}
+.bio p{
+    padding-bottom: 18px;
+    font-size: 16px;
+}
+.made a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+@media only screen and (max-width: 992px){
+    .second-container{
+        padding-top: 40px;
+    }
+    .second-container p {
+        text-align: left;
+        font-size: 20px;
+      ;
+    }
+    .second-container img{
+        width: 40%;
+    }
+    .bio{
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .second-container{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 30px 0px 30px;
+    }
+    .second-container p{
+        margin: 0;
+        width: 100%;
+        font-size: 18px;
+        text-align: left;
+        padding-bottom: 20px;  
+    }
+    .second-container img{
+        width: 80%;
+    }
+    .bio{
+        width: 100%;
+    }
+}
